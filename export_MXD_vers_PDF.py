@@ -15,10 +15,8 @@ import arcpy
 
 arcpy.env.workspace = "c:/temp"
 
-# Copy each file with a .csv extension to a dBASE file
+#Export chaque fichier .mxd en fichier PDF 
 for fichier_MXD in arcpy.ListFiles("*.mxd"):
     mxd = arcpy.mapping.MapDocument(fichier_MXD)
     arcpy.mapping.ExportToPDF(mxd, fichier_MXD + ".pdf")
-
-
 """
