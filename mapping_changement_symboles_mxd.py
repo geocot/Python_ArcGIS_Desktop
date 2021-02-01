@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import arcpy
 mxd = arcpy.mapping.MapDocument("C:/Temp/Donnees_Gouv/prj2.mxd")
 lyr = arcpy.mapping.ListLayers(mxd)[1]
